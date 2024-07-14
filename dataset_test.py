@@ -1,3 +1,5 @@
+# For testing the input datasets
+
 import numpy as np
 from sklearn import datasets
 
