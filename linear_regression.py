@@ -2,7 +2,7 @@ import numpy as np
 
 # Linear Regression Class
 class LinearRegression:
-    # Initialise the instance of the class with learning_rate, n_iters, weight & bias = None
+    # Initialise the instance of the class with learning_rate, n_iters, weight & bias
     def __init__(self, learning_rate=0.001, n_iters=1000):
         self.lr = learning_rate
         self.n_iters = n_iters
@@ -14,7 +14,7 @@ class LinearRegression:
         # Find the no.of samples in the dataset and corresponding no.of features
         n_samples, n_features = X.shape
         # Initialising the weights and bias parameters with zero
-        self.weights = np.zeros(n_features)
+        self.weights = np.zeros(n_features) #(if zero initialisation is not preferred - use np.random.randn())
         self.bias = 0
 
         # Gradient descent (Start Training)
